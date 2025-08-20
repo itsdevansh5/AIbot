@@ -20,7 +20,7 @@ if not cohere_api_key:
 # Initialize Cohere client
 co = cohere.Client(cohere_api_key)
 
-# A simple list to act as your "knowledge base" for this example
+# The list to act as your "knowledge base"
 data_chunks = []
 data_file_path = "data/raw_data.txt"
 
@@ -61,10 +61,8 @@ def ask_chatbot():
     if not user_query:
         return jsonify({"answer": "Please enter a query."})
     
-    full_response = ""
-    
-    # New and improved preamble with a personality and strict instructions
-    preamble = "You are a very sweet and helpful college admissions and hostel chatbot. Your purpose is to provide accurate and concise answers. You must only use the information provided in the documents. Do not guess, make up facts, or provide information that is not explicitly available in the documents. If a question cannot be answered from the provided documents, politely state that you do not have that information."
+    # New preamble with a helpful tone for greetings but concise for answers
+    preamble = "You are a very sweet and helpful college admissions and hostel chatbot. Your purpose is to provide accurate and concise answers based on the documents provided. Do not guess, make up facts, or provide information not explicitly available. When a user first starts a conversation with a greeting, respond with a very friendly and helpful greeting of your own."
 
     try:
         response = co.chat(
@@ -76,9 +74,7 @@ def ask_chatbot():
 
         answer = response.text
         
-        full_response = answer
-        
-        return jsonify({"answer": full_response})
+        return jsonify({"answer": answer})
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")
