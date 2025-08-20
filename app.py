@@ -22,7 +22,7 @@ co = cohere.Client(cohere_api_key)
 
 # The list to act as your "knowledge base"
 data_chunks = []
-data_file_path = "data/raw_data.txt"
+data_file_path = "data/data.json"
 
 def chunk_text(text, max_chunk_size=500):
     """
