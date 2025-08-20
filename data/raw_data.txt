@@ -1,0 +1,64 @@
+--- Admission and General Information ---
+
+[cite_start]For most programs, admission is based on a national-level entrance exam conducted by SRM Institute of Science and Technology (SRMIST) or other authorized boards[cite: 1]. [cite_start]Some programs have direct admission based on qualifying examination marks[cite: 1]. [cite_start]All admissions require candidates to meet a minimum marks requirement in their qualifying exams[cite: 1].
+
+[cite_start]**Entrance-based programs:** Admission is through an entrance exam[cite: 1]. [cite_start]These programs include B.Tech (SRMJEEE UG) [cite: 1][cite_start], B.Arch (NATA) [cite: 1][cite_start], and M.Tech (SRMJEEE PG)[cite: 1].
+
+[cite_start]**Non-entrance-based programs:** Admission is based on meeting the minimum marks in the qualifying exam[cite: 1]. [cite_start]These programs include B.Des, M.Arch, and Advanced PG Diploma in Life Science Technology[cite: 1].
+
+--- Undergraduate Eligibility ---
+
+**B.Tech / M.Tech Integrated Programs (Regular Stream):**
+- [cite_start]**Nationality and Age:** You must be a Resident Indian and be at least 16 years and 6 months old by July 31st of the year your 12th board exam is held[cite: 1]. [cite_start]Non-Resident Indians (NRI) and OCI/PIO card holders must apply using the international student application form[cite: 1].
+- [cite_start]**Qualifying Exam:** You must have passed or be appearing in the 10+2 pattern Higher Secondary Examination with a minimum of 60% aggregate in Physics (mandatory), Mathematics (mandatory), and at least one of Chemistry, Biotechnology, Biology, Computer Science, IT, Informatics Practices, Engineering Graphics, Botany, or Zoology as major subjects[cite: 1].
+- [cite_start]**For B.Tech in Biotechnology, Genetic Engineering, and Biomedical Engineering:** A minimum of 60% aggregate in PCM / PMB / PCB / PCB or Z (Botany or Zoology) is required[cite: 1]. [cite_start]Students who have not studied Mathematics in +2 must take a 4-credit Mathematics course in the First Year[cite: 1].
+- [cite_start]**For GCE A-level:** You must have Physics and Mathematics as compulsory subjects, plus one of the other specified subjects as a major[cite: 1].
+- [cite_start]**For International Baccalaureate (IB):** You need an IB diploma or certificate[cite: 1]. [cite_start]All B.Tech programs require Maths in HL, with Physics and another science subject in SL/HL[cite: 1]. [cite_start]For Biotech, Genetic, and Biomedical programs, Biology is mandatory in HL, with Physics and another subject in SL/HL[cite: 1].
+
+**B.Arch / B.Des Eligibility:**
+- [cite_start]**B.Arch:** You must pass the 10+2 exam with at least 50% in Physics, Chemistry, and Mathematics, and a 50% aggregate in the 10+2 exam[cite: 1]. [cite_start]You also need to qualify an Aptitude Test in Architecture (NATA)[cite: 1].
+- [cite_start]**B.Des:** You need a minimum of 50% aggregate in the 10+2 exam from any stream (Science, Commerce, Fine Arts, etc.)[cite: 1]. [cite_start]Candidates with a UCEED score will be given preference[cite: 1].
+
+--- M.Tech Eligibility ---
+
+[cite_start]**General M.Tech Programs:** Requires a four-year Bachelor's Degree in a relevant field with a minimum 50% aggregate[cite: 1].
+[cite_start]**M.Arch:** Requires a 50% aggregate in a Bachelor of Architecture degree or equivalent and a passing score on the Post Graduate Entrance Test in Architecture[cite: 1].
+[cite_start]**M.Des:** Requires a 50% aggregate in a Bachelor of Design or Architecture degree[cite: 1]. [cite_start]Candidates with a CEED score are preferred[cite: 1].
+
+--- Important Notes ---
+
+- A one-time non-refundable and non-transferable registration fee of Rs. 10,000 / Rs. [cite_start]15,000 must be paid for all programs[cite: 1].
+- [cite_start]The application fee is non-refundable[cite: 1].
+- [cite_start]Once you've paid the admission fees and are admitted, the fees will be refunded as per the norms of AICTE[cite: 1].
+- [cite_start]Course/Campus preference in the application is for statistical purposes only; the actual choice is made during counseling based on your rank and seat availability[cite: 1].
+
+--- How to Apply ---
+
+You can apply online with e-payment at the following URLs for specific programs:
+- [cite_start]B.Arch/B.Des: `https://applications.srmist.edu.in/architecture-and-design` [cite: 1]
+- [cite_start]M.Arch/M.Des: `https://applications.srmist.edu.in/m-arch-m-des` [cite: 1]
+
+**Instructions for Online Application:**
+- [cite_start]You need to upload a self-attested scanned photo (200x230 pixels, 5 MB) and signature (140x60 pixels, 5 MB)[cite: 1].
+- [cite_start]After submission, an application number will be generated for future reference[cite: 1].
+
+--- SRMJEEE (UG) FAQs ---
+
+1.  **Application Cost:** The cost is Rs. [cite_start]1400 for each phase[cite: 1].
+2.  [cite_start]**Number of Phases:** There are 3 phases for the SRMJEEE 2025 exam[cite: 1].
+3.  **Exam Dates:** Phase I is from April 22-27, 2025; [cite_start]Phase II is from June 12-17, 2025; and Phase III is from July 4-5, 2025[cite: 1].
+4.  [cite_start]**Mode of Examination:** It is a remote, proctored online exam that can be taken from home on a desktop or laptop[cite: 1].
+5.  [cite_start]**Mock Tests:** Yes, a mock test will be conducted before the main exam[cite: 1].
+6.  [cite_start]**Negative Marking:** There is no negative marking in the SRMJEEE exam[cite: 1].
+7.  [cite_start]**Age Limit:** You must be at least 16 years and 6 months old by July 31st of the year you are appearing for the 12th board exam[cite: 1].
+8.  [cite_start]**System Requirements:** You need a desktop or laptop with a webcam, Google Chrome or Mozilla Firefox, a stable internet connection (2 Mbps minimum), and a microphone[cite: 1].
+9.  [cite_start]**Next Steps After Results:** After checking your rank online, you will be invited to an online counseling process to choose your course and campus[cite: 1]. [cite_start]You must pay the admission fee within a specified time to confirm your seat[cite: 1].
+
+--- SRMJEEE (PG) FAQs ---
+
+1.  **Application Cost:** The application cost is Rs. 1400 for each phase.
+2.  **Exam Dates:** Phase I is on March 15, 2025; Phase II is on May 17, 2025; and Phase III is on July 5, 2025.
+3.  **Mode of Examination:** The exam is a remote, proctored online exam.
+4.  **Mock Tests:** Yes, mock tests are conducted before the main exam.
+5.  **Negative Marking:** There is no negative marking in SRMJEEE(PG).
+6.  **System Requirements:** You need a desktop or laptop with a webcam, Google Chrome or Mozilla Firefox, a stable internet connection (minimum 2 Mbps), and a microphone.
