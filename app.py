@@ -25,6 +25,9 @@ if not cohere_api_key:
 # Initialize Cohere client
 co = cohere.Client(cohere_api_key)
 
+# Configuration - Add your fine-tuned model ID here
+FINE_TUNED_MODEL_ID = os.getenv("FINE_TUNED_MODEL_ID", "d9abac42-c216-4b61-9c23-44f1acd73481-ft")
+
 # Global variables for our knowledge base
 data_chunks = []
 vectorizer = None
@@ -169,6 +172,68 @@ def extract_direct_answer(query):
     
     return None
 
+def classify_query_with_finetuned_model(query):
+    """
+    Use the fine-tuned model to classify the query and determine the best response approach.
+    """
+    try:
+        response = co.classify(
+            model=FINE_TUNED_MODEL_ID,
+            inputs=[query]
+        )
+        
+        if response and response.classifications:
+            classification = response.classifications[0]
+            predicted_labels = classification.labels
+            confidence_scores = {label.confidence for label in predicted_labels}
+            
+            # If we have high confidence in the classification, use the fine-tuned model
+            if max(confidence_scores) > 0.7:
+                return "finetuned"
+        
+        return "general"
+    except Exception as e:
+        logging.error(f"Error using fine-tuned model: {e}")
+        return "general"
+
+def get_answer_from_finetuned_model(query, relevant_chunks):
+    """
+    Get an answer using the fine-tuned model with relevant context.
+    """
+    try:
+        # Prepare the context from relevant chunks
+        context = "\n\n".join(relevant_chunks) if relevant_chunks else ""
+        
+        # Create a prompt that includes the context
+        prompt = f"""Context information about SRM Institute of Science and Technology:
+        
+        {context}
+        
+        Question: {query}
+        
+        Answer:"""
+        
+        # Generate response using the fine-tuned model
+        response = co.generate(
+            model=FINE_TUNED_MODEL_ID,
+            prompt=prompt,
+            max_tokens=300,
+            temperature=0.3,
+            k=0,
+            p=0.75,
+            stop_sequences=[],
+            return_likelihoods='NONE'
+        )
+        
+        if response and response.generations:
+            return response.generations[0].text.strip()
+        else:
+            return None
+            
+    except Exception as e:
+        logging.error(f"Error generating answer with fine-tuned model: {e}")
+        return None
+
 # Preprocess data at startup
 preprocess_data()
 
@@ -203,40 +268,52 @@ def ask_chatbot():
         logging.info(f"Response time: {response_time:.2f} seconds")
         return jsonify({"answer": direct_answer})
     
-    # Use hybrid approach: TF-IDF for retrieval, then Cohere for answering
+    # Get relevant chunks for context
     relevant_chunks = get_relevant_chunks(user_query)
     
-    if not relevant_chunks:
-        # If no relevant chunks found, use Cohere without documents
-        try:
-            response = co.chat(
-                model="command-r",
-                message=user_query,
-                preamble="You are a helpful college admissions and hostel chatbot for SRM Institute of Science and Technology. If you don't know the answer, suggest contacting the admissions office at admissions@srmist.edu.in."
-            )
-            answer = response.text
-        except Exception as e:
-            logging.error(f"An error occurred: {e}")
-            answer = "Sorry, I am unable to process your request at the moment. Please try again later or contact admissions@srmist.edu.in for assistance."
-    else:
-        # Use Cohere with only the most relevant documents
-        try:
-            preamble = "You are a helpful college admissions and hostel chatbot for SRM Institute of Science and Technology. Use the provided documents to answer the question accurately and concisely. If the information isn't in the documents, say you don't know and suggest contacting admissions@srmist.edu.in."
+    # Decide which model to use
+    model_approach = classify_query_with_finetuned_model(user_query)
+    
+    try:
+        if model_approach == "finetuned" and FINE_TUNED_MODEL_ID:
+            # Use the fine-tuned model
+            answer = get_answer_from_finetuned_model(user_query, relevant_chunks)
             
+            if answer:
+                response_time = time.time() - start_time
+                logging.info(f"Response time: {response_time:.2f} seconds (Fine-tuned model)")
+                return jsonify({"answer": answer, "model": "fine_tuned"})
+        
+        # Fall back to the general model
+        preamble = "You are a helpful college admissions and hostel chatbot for SRM Institute of Science and Technology. Use the provided documents to answer the question accurately and concisely. If the information isn't in the documents, say you don't know and suggest contacting admissions@srmist.edu.in."
+        
+        if relevant_chunks:
+            # Use Cohere with relevant documents
             response = co.chat(
                 model="command-r",
                 message=user_query,
                 documents=[{"id": str(i), "text": doc} for i, doc in enumerate(relevant_chunks)],
                 preamble=preamble
             )
-            answer = response.text
-        except Exception as e:
-            logging.error(f"An error occurred: {e}")
-            answer = "Sorry, I am unable to process your request at the moment. Please try again later or contact admissions@srmist.edu.in for assistance."
-    
-    response_time = time.time() - start_time
-    logging.info(f"Response time: {response_time:.2f} seconds")
-    return jsonify({"answer": answer})
+        else:
+            # Use Cohere without documents
+            response = co.chat(
+                model="command-r",
+                message=user_query,
+                preamble=preamble
+            )
+        
+        answer = response.text
+        response_time = time.time() - start_time
+        logging.info(f"Response time: {response_time:.2f} seconds (General model)")
+        return jsonify({"answer": answer, "model": "general"})
+        
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        answer = "Sorry, I am unable to process your request at the moment. Please try again later or contact admissions@srmist.edu.in for assistance."
+        response_time = time.time() - start_time
+        logging.info(f"Response time: {response_time:.2f} seconds")
+        return jsonify({"answer": answer, "model": "error"})
 
 if __name__ == "__main__":
     app.run(debug=True)

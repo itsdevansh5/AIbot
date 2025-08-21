@@ -1,0 +1,114 @@
+{"text": "What is the email address for admissions and hostel inquiries?", "label": ["contact_information", "hostel_info"]}
+{"text": "How can I contact the college about B.Tech admission and hostel facilities?", "label": ["contact_information", "admission_process", "hostel_info", "btech"]}
+{"text": "What's the phone number for admissions office and hostel helpdesk?", "label": ["contact_information", "hostel_info"]}
+{"text": "Where can I find the admissions email and application portal?", "label": ["contact_information", "admission_process"]}
+{"text": "Who should I email about hostel facilities and what documents are needed?", "label": ["contact_information", "hostel_info", "documents_required"]}
+{"text": "What is the admission procedure for B.Tech and M.Tech programs?", "label": ["admission_process", "btech", "mtech"]}
+{"text": "How do I apply for admission to Computer Science Engineering?", "label": ["admission_process", "btech", "cse"]}
+{"text": "What are the steps to apply for B.Arch program?", "label": ["admission_process", "barch"]}
+{"text": "What is the application process for international students?", "label": ["admission_process", "international"]}
+{"text": "How to apply for M.Tech in Data Science?", "label": ["admission_process", "mtech", "data_science"]}
+{"text": "What are the eligibility criteria for B.Tech admission?", "label": ["eligibility", "btech"]}
+{"text": "What percentage is required for B.Tech in Computer Science?", "label": ["eligibility", "btech", "cse"]}
+{"text": "What are the age requirements for B.Tech programs?", "label": ["eligibility", "btech"]}
+{"text": "What subjects are required for B.Tech eligibility?", "label": ["eligibility", "btech"]}
+{"text": "What is the eligibility for M.Tech in VLSI Design?", "label": ["eligibility", "mtech", "vlsi"]}
+{"text": "What are the fees for B.Tech Computer Science at KTR campus?", "label": ["fees", "btech", "cse", "ktr"]}
+{"text": "How much does hostel accommodation cost?", "label": ["fees", "hostel_info"]}
+{"text": "What is the annual fee for M.Tech programs?", "label": ["fees", "mtech"]}
+{"text": "Are there additional fees for hostel and books?", "label": ["fees", "hostel_info"]}
+{"text": "What is the application fee for SRMJEEE?", "label": ["fees", "entrance_exam"]}
+{"text": "What documents are required for admission?", "label": ["documents_required"]}
+{"text": "What certificates need to be submitted for B.Tech application?", "label": ["documents_required", "btech"]}
+{"text": "Do I need to upload photographs and signatures?", "label": ["documents_required"]}
+{"text": "What documents are needed for hostel booking?", "label": ["documents_required", "hostel_info"]}
+{"text": "Is transfer certificate mandatory for admission?", "label": ["documents_required"]}
+{"text": "Tell me about hostel facilities at KTR campus", "label": ["hostel_info", "ktr"]}
+{"text": "What amenities are available in hostels?", "label": ["hostel_info"]}
+{"text": "Are there separate hostels for men and women?", "label": ["hostel_info"]}
+{"text": "What food options are available in hostels?", "label": ["hostel_info"]}
+{"text": "Do hostels have WiFi and security?", "label": ["hostel_info"]}
+{"text": "What is SRMJEEE exam pattern?", "label": ["entrance_exam"]}
+{"text": "When are the SRMJEEE exam dates?", "label": ["entrance_exam"]}
+{"text": "How many phases does SRMJEEE have?", "label": ["entrance_exam"]}
+{"text": "What is the mode of SRMJEEE exam?", "label": ["entrance_exam"]}
+{"text": "Is there negative marking in SRMJEEE?", "label": ["entrance_exam"]}
+{"text": "What are the application deadlines for SRMJEEE?", "label": ["entrance_exam", "deadlines"]}
+{"text": "When is the last date to apply for Phase 1?", "label": ["entrance_exam", "deadlines"]}
+{"text": "What are the important dates for admission?", "label": ["deadlines"]}
+{"text": "When does the fall semester application close?", "label": ["deadlines"]}
+{"text": "What is the deadline for scholarship applications?", "label": ["deadlines", "scholarships"]}
+{"text": "Are there scholarships available for students?", "label": ["scholarships"]}
+{"text": "What types of scholarships does SRM offer?", "label": ["scholarships"]}
+{"text": "How can I apply for merit-based scholarships?", "label": ["scholarships"]}
+{"text": "Are there scholarships for international students?", "label": ["scholarships", "international"]}
+{"text": "What programs are available in Computer Science?", "label": ["programs", "cse"]}
+{"text": "What B.Tech specializations are offered?", "label": ["programs", "btech"]}
+{"text": "Which campuses offer Artificial Intelligence programs?", "label": ["programs", "ai"]}
+{"text": "What M.Tech programs are available?", "label": ["programs", "mtech"]}
+{"text": "Are there part-time engineering programs?", "label": ["programs", "part_time"]}
+{"text": "What is the intake for CSE at KTR campus?", "label": ["programs", "cse", "ktr"]}
+{"text": "How is the placement record at SRM?", "label": ["placements"]}
+{"text": "Which companies recruit from SRM?", "label": ["placements"]}
+{"text": "What is the average placement package?", "label": ["placements"]}
+{"text": "Are there placement opportunities for M.Tech students?", "label": ["placements", "mtech"]}
+{"text": "How are placements for Computer Science students?", "label": ["placements", "cse"]}
+{"text": "What ranking does SRM have among engineering colleges?", "label": ["rankings"]}
+{"text": "Is SRM a top-ranked private engineering institute?", "label": ["rankings"]}
+{"text": "How does SRM rank compared to other universities?", "label": ["rankings"]}
+{"text": "What are the campus facilities like?", "label": ["campus_facilities"]}
+{"text": "Does SRM have sports facilities?", "label": ["campus_facilities"]}
+{"text": "Are there medical facilities on campus?", "label": ["campus_facilities"]}
+{"text": "What international programs are available?", "label": ["international"]}
+{"text": "How can international students apply?", "label": ["international", "admission_process"]}
+{"text": "What are the eligibility criteria for international students?", "label": ["international", "eligibility"]}
+{"text": "Hello, I need help with admission process", "label": ["greeting", "admission_process"]}
+{"text": "Hi, can you tell me about hostel facilities and fees?", "label": ["greeting", "hostel_info", "fees"]}
+{"text": "Good morning, I have questions about B.Tech eligibility and application", "label": ["greeting", "btech", "eligibility", "admission_process"]}
+{"text": "Thank you for the information about scholarships", "label": ["gratitude", "scholarships"]}
+{"text": "Thanks, that helps with my admission decision", "label": ["gratitude", "admission_process"]}
+{"text": "What are the B.Arch eligibility requirements?", "label": ["eligibility", "barch"]}
+{"text": "How do I apply for B.Arch program?", "label": ["admission_process", "barch"]}
+{"text": "What is the duration of B.Arch program?", "label": ["programs", "barch"]}
+{"text": "What are the fees for B.Arch program?", "label": ["fees", "barch"]}
+{"text": "Does SRM offer B.Arch with specializations?", "label": ["programs", "barch"]}
+{"text": "What AI programs are available at SRM?", "label": ["programs", "ai"]}
+{"text": "How is the Artificial Intelligence program structured?", "label": ["programs", "ai"]}
+{"text": "What are the career opportunities after AI degree?", "label": ["placements", "ai"]}
+{"text": "What is the intake for AI program?", "label": ["programs", "ai"]}
+{"text": "Are there research opportunities in AI?", "label": ["programs", "ai"]}
+{"text": "What Data Science programs are offered?", "label": ["programs", "data_science"]}
+{"text": "How is the M.Tech Data Science curriculum?", "label": ["programs", "data_science", "mtech"]}
+{"text": "What are the prerequisites for Data Science program?", "label": ["eligibility", "data_science"]}
+{"text": "What is the scope of Data Science at SRM?", "label": ["placements", "data_science"]}
+{"text": "Does SRM offer B.Tech in Data Science?", "label": ["programs", "data_science", "btech"]}
+{"text": "What VLSI design programs are available?", "label": ["programs", "vlsi"]}
+{"text": "What is the eligibility for VLSI Design M.Tech?", "label": ["eligibility", "vlsi", "mtech"]}
+{"text": "How is the placement record for VLSI students?", "label": ["placements", "vlsi"]}
+{"text": "What are the research areas in VLSI at SRM?", "label": ["programs", "vlsi"]}
+{"text": "What is the duration of M.Tech VLSI program?", "label": ["programs", "vlsi", "mtech"]}
+{"text": "What facilities are available at KTR campus?", "label": ["campus_facilities", "ktr"]}
+{"text": "How is the infrastructure at KTR campus?", "label": ["campus_facilities", "ktr"]}
+{"text": "What hostel options are available at KTR?", "label": ["hostel_info", "ktr"]}
+{"text": "What programs are offered at KTR campus?", "label": ["programs", "ktr"]}
+{"text": "How do I reach KTR campus?", "label": ["campus_facilities", "ktr"]}
+{"text": "What part-time programs does SRM offer?", "label": ["programs", "part_time"]}
+{"text": "How do I apply for part-time B.Tech?", "label": ["admission_process", "part_time"]}
+{"text": "What are the fees for part-time programs?", "label": ["fees", "part_time"]}
+{"text": "What is the duration of part-time B.Tech?", "label": ["programs", "part_time"]}
+{"text": "Are part-time programs available for working professionals?", "label": ["programs", "part_time"]}
+{"text": "What national ranking has SRM achieved?", "label": ["rankings"]}
+{"text": "How does SRM rank for engineering programs?", "label": ["rankings"]}
+{"text": "Is SRM among top private universities in India?", "label": ["rankings"]}
+{"text": "What recognition has SRM received recently?", "label": ["rankings"]}
+{"text": "How does SRM compare to IITs and NITs?", "label": ["rankings"]}
+{"text": "Hello, good morning!", "label": ["greeting"]}
+{"text": "Hi there, I need some information", "label": ["greeting"]}
+{"text": "Good afternoon, can you help me?", "label": ["greeting"]}
+{"text": "Hey, I have a question about admissions", "label": ["greeting", "admission_process"]}
+{"text": "Hi, thanks for your assistance", "label": ["greeting", "gratitude"]}
+{"text": "Thank you so much for your help!", "label": ["gratitude"]}
+{"text": "I appreciate your detailed response", "label": ["gratitude"]}
+{"text": "Thanks for clarifying my doubts", "label": ["gratitude"]}
+{"text": "Thank you, this information is very helpful", "label": ["gratitude"]}
+{"text": "I'm grateful for your assistance", "label": ["gratitude"]}
