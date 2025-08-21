@@ -357,7 +357,7 @@
             font-weight: 400;
         }
 
-        .send-button {
+        .send-button, .voice-button {
             min-width: 52px;
             height: 52px;
             background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
@@ -375,7 +375,7 @@
             overflow: hidden;
         }
 
-        .send-button::before {
+        .send-button::before, .voice-button::before {
             content: '';
             position: absolute;
             top: 0;
@@ -387,28 +387,33 @@
             transition: transform 0.6s ease;
         }
 
-        .send-button:hover::before {
+        .send-button:hover::before, .voice-button:hover::before {
             transform: translateX(100%);
         }
 
-        .send-button:hover {
+        .send-button:hover, .voice-button:hover {
             transform: translateY(-2px) scale(1.05);
             box-shadow: var(--shadow-lg);
         }
 
-        .send-button:active {
+        .send-button:active, .voice-button:active {
             transform: translateY(0) scale(0.95);
         }
 
-        .send-button:disabled {
+        .send-button:disabled, .voice-button:disabled {
             background: var(--gray-300);
             cursor: not-allowed;
             transform: none;
             box-shadow: var(--shadow-sm);
         }
 
-        .send-button:disabled::before {
+        .send-button:disabled::before, .voice-button:disabled::before {
             display: none;
+        }
+
+        .voice-button.listening {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #EF4444 100%);
+            animation: pulse 1.5s infinite;
         }
 
         .welcome-message {
@@ -590,7 +595,7 @@
                 font-size: 14px;
             }
 
-            .send-button {
+            .send-button, .voice-button {
                 min-width: 48px;
                 height: 48px;
                 font-size: 16px;
@@ -688,6 +693,9 @@
                         placeholder="Type your admission query here..."
                         rows="1"
                     ></textarea>
+                    <button class="voice-button" id="voiceButton" onclick="toggleVoiceRecognition()">
+                        <i class="fas fa-microphone"></i>
+                    </button>
                     <button class="send-button" id="sendButton" onclick="sendMessage()">
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -712,8 +720,79 @@
         const chatBox = document.getElementById('chatMessages');
         const userInput = document.getElementById('messageInput');
         const sendBtn = document.getElementById('sendButton');
+        const voiceBtn = document.getElementById('voiceButton');
         const errorMessage = document.getElementById('errorMessage');
         let isTyping = false;
+        let recognition = null;
+        let isListening = false;
+
+        // Check if browser supports speech recognition
+        function initializeSpeechRecognition() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = 'en-US';
+
+                recognition.onstart = function() {
+                    isListening = true;
+                    voiceBtn.classList.add('listening');
+                    userInput.placeholder = "Listening... Speak now";
+                };
+
+                recognition.onresult = function(event) {
+                    const transcript = event.results[0][0].transcript;
+                    userInput.value = transcript;
+                    isListening = false;
+                    voiceBtn.classList.remove('listening');
+                    userInput.placeholder = "Type your admission query here...";
+                };
+
+                recognition.onerror = function(event) {
+                    console.error('Speech recognition error', event.error);
+                    isListening = false;
+                    voiceBtn.classList.remove('listening');
+                    userInput.placeholder = "Type your admission query here...";
+                    
+                    if (event.error === 'not-allowed') {
+                        showError('Microphone access is not allowed. Please enable microphone permissions in your browser settings.');
+                    } else {
+                        showError('Speech recognition error: ' + event.error);
+                    }
+                };
+
+                recognition.onend = function() {
+                    if (isListening) {
+                        isListening = false;
+                        voiceBtn.classList.remove('listening');
+                        userInput.placeholder = "Type your admission query here...";
+                    }
+                };
+            } else {
+                voiceBtn.style.display = 'none';
+                showError('Speech recognition is not supported in this browser.');
+            }
+        }
+
+        // Toggle voice recognition
+        function toggleVoiceRecognition() {
+            if (!recognition) {
+                initializeSpeechRecognition();
+                return;
+            }
+            
+            if (isListening) {
+                recognition.stop();
+            } else {
+                try {
+                    recognition.start();
+                } catch (error) {
+                    console.error('Speech recognition start error:', error);
+                    showError('Could not start voice recognition. Please try again.');
+                }
+            }
+        }
 
         // Auto-resize textarea
         userInput.addEventListener('input', function() {
@@ -880,13 +959,14 @@
             }
         }
 
-        // Update connection status every 30 seconds
-        setInterval(updateConnectionStatus, 30000);
-
-        // Focus on input when page loads
+        // Initialize speech recognition when page loads
         window.addEventListener('load', () => {
             userInput.focus();
+            initializeSpeechRecognition();
         });
+
+        // Update connection status every 30 seconds
+        setInterval(updateConnectionStatus, 30000);
     </script>
 </body>
 </html>
