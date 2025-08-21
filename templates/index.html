@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        /* Your existing CSS styles remain unchanged */
         * {
             margin: 0;
             padding: 0;
@@ -747,6 +748,11 @@
                     isListening = false;
                     voiceBtn.classList.remove('listening');
                     userInput.placeholder = "Type your admission query here...";
+                    
+                    // Automatically send the message after voice input
+                    setTimeout(() => {
+                        sendMessage();
+                    }, 500);
                 };
 
                 recognition.onerror = function(event) {
@@ -757,6 +763,8 @@
                     
                     if (event.error === 'not-allowed') {
                         showError('Microphone access is not allowed. Please enable microphone permissions in your browser settings.');
+                    } else if (event.error === 'network') {
+                        showError('Network error. Please check your internet connection.');
                     } else {
                         showError('Speech recognition error: ' + event.error);
                     }
@@ -779,18 +787,44 @@
         function toggleVoiceRecognition() {
             if (!recognition) {
                 initializeSpeechRecognition();
+                // Give a moment for initialization
+                setTimeout(() => {
+                    if (recognition) {
+                        startListening();
+                    }
+                }, 100);
                 return;
             }
             
             if (isListening) {
                 recognition.stop();
             } else {
-                try {
-                    recognition.start();
-                } catch (error) {
-                    console.error('Speech recognition start error:', error);
-                    showError('Could not start voice recognition. Please try again.');
-                }
+                startListening();
+            }
+        }
+
+        // Start listening function
+        function startListening() {
+            try {
+                // Clear any previous error
+                errorMessage.style.display = 'none';
+                
+                // Request microphone permission first
+                navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(function(stream) {
+                        // Stop all tracks to release the microphone
+                        stream.getTracks().forEach(track => track.stop());
+                        
+                        // Now start recognition
+                        recognition.start();
+                    })
+                    .catch(function(err) {
+                        console.error('Microphone access denied:', err);
+                        showError('Microphone access is denied. Please allow microphone access in your browser settings.');
+                    });
+            } catch (error) {
+                console.error('Speech recognition start error:', error);
+                showError('Could not start voice recognition. Please try again.');
             }
         }
 

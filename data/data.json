@@ -1,93 +1,431 @@
 {
-  "university": {
-    "name": "SRM Institute of Science and Technology",
+  "predefined_answers": {
+    "email": "The college email address is admissions@srmist.edu.in. For hostel queries, contact hostel.helpdesk.ktr@srmist.edu.in.",
+    "email address": "The college email address is admissions@srmist.edu.in. For hostel queries, contact hostel.helpdesk.ktr@srmist.edu.in.",
+    "contact": "For admissions: admissions@srmist.edu.in or +91-44-27450000. For hostel: hostel.helpdesk.ktr@srmist.edu.in or 044-27453159.",
+    "contact information": "For admissions: admissions@srmist.edu.in or +91-44-27450000. For hostel: hostel.helpdesk.ktr@srmist.edu.in or 044-27453159.",
+    "phone number": "Admissions office: +91-44-27450000. Hostel helpdesk: 044-27453159.",
+    "admission procedure": "Admission is done through SRMJEEE entrance exam or based on qualifying exam marks. You need to apply online via SRM's application portal, submit required documents, and appear for counseling if selected.",
+    "admission process": "Admission is done through SRMJEEE entrance exam or based on qualifying exam marks. You need to apply online via SRM's application portal, submit required documents, and appear for counseling if selected.",
+    "how to apply": "Apply online via SRM's application portal with e-payment. All fields marked * are mandatory. Upload scanned photo (200x230 px) and signature (140x60 px). Save your application number after submission.",
+    "application deadline": "The application deadlines for SRMJEEE are: Phase 1 - April 16, 2025; Phase 2 - June 6, 2025; Phase 3 - June 30, 2025.",
+    "application fee": "The SRMJEEE application fee is ₹1,400 per phase. For regular admission, there's a one-time non-refundable registration fee of ₹10,000 or ₹15,000 depending on the program.",
+    "required documents": "You'll need to submit: scanned photograph (200x230 px), signature (140x60 px), 10th & 12th mark sheets, graduation marks (if applicable), transfer certificate, migration certificate (if applicable), caste certificate (if applicable), and entrance exam scorecard.",
+    "hostel fees": "Hostel fees vary by campus and room type. At KTR campus, fees range from ₹1.5-3.5 lakhs per year. Please check the specific hostel for exact pricing.",
+    "hostel facilities": "Our hostels provide Wi-Fi, laundry facilities, common rooms, 24/7 security, gymnasium, playgrounds, indoor games, medical support, and meal options including North Indian, South Indian, Thai, Chinese, and Continental cuisine.",
+    "scholarships": "We offer merit-based and need-based scholarships. The application deadline for scholarships is the same as the admission deadline.",
+    "entrance exam": "SRMJEEE is conducted in 3 phases: Phase 1 (April 22-27, 2025), Phase 2 (June 12-17, 2025), Phase 3 (July 4-5, 2025). It's a remote proctored online exam from home.",
+    "eligibility btech": "For B.Tech: 10+2 with Physics and Mathematics (mandatory) plus one of Chemistry/Biotechnology/Biology/CS/IT with 60% aggregate. Minimum age: 16 years 6 months by July 31 of admission year.",
+    "eligibility mtech": "For M.Tech: Bachelor's in relevant field with minimum 50% aggregate. Specific eligibility varies by specialization."
+  },
+
+  "general": {
+    "university_name": "SRM Institute of Science and Technology",
+    "former_name": "SRM University",
     "website": "https://www.srmist.edu.in",
-    "contacts": {
+    "student_portal": "https://sp.srmist.edu.in",
+    "international_application": "https://intlapplications.srmist.edu.in/international-application-form-2025",
+    "contact": {
       "admissions_email": "admissions@srmist.edu.in",
-      "admissions_phone": "+91-44-27450000",
-      "hostel_email": "hostel.helpdesk.ktr@srmist.edu.in",
-      "hostel_phone": "044-27453159, 044-27456363, 044-27434506, 044-27456364",
-      "hostel_director_email": "director.hostels@srmist.edu.in",
-      "hostel_director_phone": "+91 9940036021"
+      "admissions_phone": "+91-44-27450000"
     }
   },
-  
-  "admission": {
-    "process": "Admission is done through SRMJEEE entrance exam or based on qualifying exam marks. Minimum marks in qualifying exams are mandatory.",
-    "entrance_exams": {
-      "B.Tech": "SRMJEEE (UG)",
-      "B.Arch": "NATA",
-      "M.Tech": "SRMJEEE (PG)"
-    },
-    "application_process": "Apply online via SRM's application portal with e-payment. All fields marked * are mandatory. Upload scanned photo (200x230 px) and signature (140x60 px). Save your application number after submission.",
-    "deadlines": {
-      "fall_semester": "June 15",
-      "spring_semester": "November 15",
-      "srmjeee_phase1": "April 16, 2025",
-      "srmjeee_phase2": "June 6, 2025",
-      "srmjeee_phase3": "June 30, 2025"
-    },
-    "fees": {
-      "application_fee": "₹1,400 for SRMJEEE",
-      "registration_fee": "₹10,000 or ₹15,000 (one-time, non-refundable, program-dependent)"
-    }
+
+  "rankings": [
+    "Ranked No. 1 among private engineering institutes in India (Times Engineering Survey 2024)"
+  ],
+
+  "placements": {
+    "testimonial": "I am very delighted and excited to be given a job opportunity by Works Application. I am really looking forward to the challenging yet rewarding experience. I would like to thank SRM Institute of Science and Technology and CSE Department for harnessing the potential in me and offering me opportunities to realize that potential which has been instrumental in order for me to become who I am today.",
+    "author": "Karthik R Balaji, B.Tech Final Year Student"
   },
-  
-  "eligibility": {
-    "btech": {
-      "academic": "10+2 with Physics, Mathematics, and one of Chemistry/Biotechnology/Biology/CS/IT with 60% aggregate",
-      "age": "At least 16 years and 6 months by July 31 of the year of 12th exam"
-    },
-    "mtech": {
-      "academic": "Bachelor's in relevant field with minimum 50% aggregate"
-    }
-  },
-  
-  "programs": {
-    "btech": {
-      "computer_science": {
-        "ktc_campus": {
-          "fee": "₹4,75,000 per year",
-          "intake": 1140
+
+  "admission_criteria": {
+    "overview": "Admission is done through national-level entrance exams or based on qualifying exam marks. Minimum marks in qualifying exams are mandatory.",
+    "entrance_based": {
+      "description": "Admission via entrance exam with minimum qualifying marks.",
+      "programs": [
+        {
+          "program": "B.Tech",
+          "exam": "SRMJEEE (UG)"
         },
-        "rmp_campus": {
-          "fee": "₹5,00,000 per year",
-          "intake": 840
+        {
+          "program": "B.Arch",
+          "exam": "NATA"
+        },
+        {
+          "program": "M.Tech",
+          "exam": "SRMJEEE (PG)"
+        }
+      ]
+    },
+    "non_entrance_based": {
+      "description": "Admission based on qualifying exam marks only.",
+      "programs": [
+        "B.Des",
+        "M.Arch",
+        "Advanced PG Diploma in Life Science Technology"
+      ]
+    }
+  },
+
+  "eligibility": {
+    "undergraduate": {
+      "btech": {
+        "nationality_age": {
+          "nationality": "Resident Indian (NRIs/OCI/PIO apply via international form)",
+          "age": "At least 16 years and 6 months by July 31 of the year of 12th exam"
+        },
+        "qualifying_exam": {
+          "requirement": "10+2 with Physics (mandatory), Mathematics (mandatory), and one of Chemistry/Biotechnology/Biology/CS/IT/IP/Engineering Graphics/Botany/Zoology",
+          "minimum_percentage": "60% aggregate in PCM/PMB/PCB/Z",
+          "boards_accepted": ["CBSE", "ISCE", "IB", "NIOS", "Any recognized Indian board"],
+          "nios_note": "Students must have completed 10th from regular schooling or vice-versa.",
+          "subject_notes": [
+            "Students without Chemistry should undergo a bridge course.",
+            "Students without Mathematics in +2 (for Biotech/Genetic/Biomedical) must take 4-credit Math course in 1st year."
+          ]
+        },
+        "international": {
+          "gce_a_level": "Physics & Math mandatory + one of Chemistry/Biotech/Biology/CS/IT",
+          "ib_diploma": "2 HL subjects (Maths + Physics/Chemistry/etc.), 1 SL subject"
         }
       },
-      "ai_ml": {
-        "ktc_campus": {
-          "fee": "₹4,75,000 per year",
-          "intake": 420
+      "barch": {
+        "academic": "10+2 with 50% aggregate in Physics, Chemistry, and Mathematics OR 10+3 Diploma with Math and 50% aggregate",
+        "entrance": "Qualify NATA or Council of Architecture Aptitude Test"
+      },
+      "bdes": {
+        "academic": "10+2 or equivalent with 50% aggregate",
+        "stream": "Any (Science, Commerce, Fine Arts)",
+        "preference": "Candidates with UCEED score preferred"
+      },
+      "mttech": {
+        "general": "Bachelor's in relevant field with minimum 50% aggregate",
+        "specializations": {
+          "Aerospace Engineering": "B.E/B.Tech in Aerospace, Aeronautical, Mechanical, Automobile, Mechatronics, Production, Civil, Chemical, Instrumentation",
+          "Automotive Hybrid Systems": "B.E/B. Tech in Mechanical, Automobile, Electrical, ECE, EEE, etc. (>50%). GATE or work experience preferred.",
+          "Big Data Analytics": "BE/BTech (Any), MCA, M.Sc (Maths/Stats/IT/CS)",
+          "Biomedical Engineering": "Four year Bachelor's Degree in Engineering, M.Sc Degree (or) MBBS / BPT / BOT (or) its equivalent",
+          "Biotechnology": "B.E/B.Tech in Chemical, Biotech, B.Pharm, BS/M.Sc in Life Sciences",
+          "Chemical Engineering": "B.E/B.Tech in Chemical, Petrochemical, Food, Biotech, or BS/M.Sc in Chemistry",
+          "Computer Science and Engineering": "BE/B.Tech, MCA, M.Sc (CSE/IT)",
+          "Data Science": "BE/B.Tech (Any), MCA, M.Sc (Maths/Stats/IT/CS/Physics/Chemistry)",
+          "Electronics and Control": "B.E/B.Tech in ECE, EEE, ICE, EIE",
+          "Environmental Engineering": "BE/B.Tech, B.Arch, M.Sc in Environmental Science, Chemistry, Ecology, etc.",
+          "Electric Vehicle Technology": "B.E/B.Tech in Automobile, Mechanical, EEE, ECE, Mechatronics, or M.Sc Physics/Electronics",
+          "Genetic Engineering": "B.E/B.Tech in Genetic/Biotech, B.Pharm, MBBS, BS/M.Sc in Life Sciences",
+          "Internet of Things": "BE/B.Tech, MCA, M.Sc (CSE/IT)",
+          "Mechatronics": "B.E/B.Tech in Mechanical, ECE, EEE, CSE, Mechatronics, etc.",
+          "Nanotechnology": "B.E/B.Tech (Any), M.Sc (Physics, Materials, Chemistry, Biotech)",
+          "Power Electronics": "B.E/B.Tech in EEE",
+          "Robotics": "B.E/B.Tech in Mechanical, ECE, EEE, CSE, Mechatronics, etc.",
+          "Solar Energy": "B.E/B.Tech in Mechanical, Electrical, Civil, Energy, or M.Sc (Physics, Material Science)",
+          "VLSI Design": "B.E/B.Tech in ECE, EEE, CSE, IT or M.Sc (Electronics, Physics with Electronics)"
         }
+      },
+      "march": {
+        "academic": "50% aggregate in Bachelor of Architecture or equivalent",
+        "entrance": "Qualify PG Entrance Test by Council of Architecture"
+      },
+      "mdes": {
+        "academic": "50% aggregate in B.Des or B.Arch (4-year program)",
+        "preference": "Candidates with CEED score preferred"
+      }
+    }
+  },
+
+  "programs_and_fees": {
+    "btech": [
+      { "campus": "KTR", "branch": "Artificial Intelligence", "intake": 180, "duration": 4, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Computer Science and Engineering", "intake": 1140, "duration": 4, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Computer Science and Engineering w/s AI & ML", "intake": 420, "duration": 4, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Computer Science and Engineering w/s Data Science", "intake": 120, "duration": 4, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Computer Science and Engineering w/s Cyber Security", "intake": 300, "duration": 4, "annual_fee": 425000 },
+      { "campus": "RMP", "branch": "Computer Science and Engineering", "intake": 840, "duration": 4, "annual_fee": 500000 },
+      { "campus": "NCR", "branch": "Computer Science and Engineering", "intake": 540, "duration": 4, "annual_fee": 350000 },
+      { "campus": "Trichy", "branch": "Computer Science and Engineering", "intake": 480, "duration": 4, "annual_fee": 225000 },
+      { "campus": "AMR", "branch": "Computer Science and Engineering w/s AI & ML", "intake": 960, "duration": 4, "annual_fee": 400000 },
+      { "campus": "HYN", "branch": "Computer Science and Engineering w/s Data Science & AI", "intake": 240, "duration": 4, "annual_fee": 300000 },
+      { "campus": "KTR", "branch": "Civil Engineering", "intake": 90, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Mechanical Engineering", "intake": 240, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Electronics and Communication Engineering", "intake": 480, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Electrical and Electronics Engineering", "intake": 240, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Biomedical Engineering", "intake": 60, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Aerospace Engineering", "intake": 120, "duration": 4, "annual_fee": 400000 },
+      { "campus": "KTR", "branch": "Automobile Engineering", "intake": 60, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Nanotechnology", "intake": 30, "duration": 4, "annual_fee": 400000 },
+      { "campus": "KTR", "branch": "Mechatronics Engineering", "intake": 60, "duration": 4, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Architecture", "intake": 80, "duration": 5, "annual_fee": 275000 },
+      { "campus": "KTR", "branch": "Interior Design (B.Des)", "intake": 30, "duration": 4, "annual_fee": 150000 }
+    ],
+    "mttech": [
+      { "campus": "KTR", "branch": "Computer Science and Engineering", "intake": 25, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Data Science", "intake": 25, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Big Data Analytics", "intake": 9, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Cyber Security", "intake": 30, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "VLSI Design", "intake": 12, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Embedded System Technology", "intake": 12, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Structural Engineering", "intake": 45, "duration": 2, "annual_fee": 160000 },
+      { "campus": "KTR", "branch": "Renewable Energy", "intake": 12, "duration": 2, "annual_fee": 160000 },
+      { "campus": "AMR", "branch": "AI and Machine Learning", "intake": 20, "duration": 2, "annual_fee": 150000 },
+      { "campus": "VDP", "branch": "Computer Science and Engineering", "intake": 24, "duration": 2, "annual_fee": 150000 }
+    ],
+    "mttech_integrated": [
+      { "campus": "KTR", "branch": "Computer Science and Engineering", "intake": 30, "duration": 5, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Artificial Intelligence", "intake": 60, "duration": 5, "annual_fee": 475000 },
+      { "campus": "KTR", "branch": "Data Science", "intake": 60, "duration": 5, "annual_fee": 475000 }
+    ],
+    "part_time": [
+      { "campus": "RMP", "program": "B.Tech Civil", "duration": "3.5 Years", "annual_fee": 70000 },
+      { "campus": "RMP", "program": "B.Tech Mechanical", "duration": "3.5 Years", "annual_fee": 70000 },
+      { "campus": "RMP", "program": "B.Tech EEE", "duration": "3.5 Years", "annual_fee": 70000 },
+      { "campus": "VDP", "program": "B.Tech CSE", "duration": "3.5 Years", "annual_fee": 60000 }
+    ],
+    "notes": [
+      "One-time non-refundable registration fee: ₹10,000 or ₹15,000 depending on program.",
+      "Books & CDC fees applicable to Ramapuram, Vadapalani, and Trichy campuses.",
+      "Flexible Timings (Diploma to B.Tech): ₹1,00,000/year",
+      "M.Tech Flexible Timings (KTR): ₹1,60,000/year"
+    ]
+  },
+
+  "application": {
+    "how_to_apply": "Apply online via SRM's application portal with e-payment.",
+    "urls": {
+      "barch_bdes": "https://applications.srmist.edu.in/architecture-and-design",
+      "march_mdes": "https://applications.srmist.edu.in/m-arch-m-des"
+    },
+    "instructions": [
+      "All fields marked * are mandatory.",
+      "Upload scanned photo (200x230 px) and signature (140x60 px).",
+      "After submission, save the application number.",
+      "Course/campus preference is statistical; final selection during counseling."
+    ],
+    "withdrawal_policy": {
+      "engineering_management_mca": "As per AICTE norms",
+      "others": "As per UGC norms"
+    }
+  },
+
+  "srmeese": {
+    "undergraduate": {
+      "phases": 3,
+      "exam_dates": {
+        "phase1": "22.04.2025 to 27.04.2025",
+        "phase2": "12.06.2025 to 17.06.2025",
+        "phase3": "04.07.2025 to 05.07.2025"
+      },
+      "application_deadlines": {
+        "phase1": "16.04.2025",
+        "phase2": "06.06.2025",
+        "phase3": "30.06.2025"
+      },
+      "cost_per_phase": 1400,
+      "mode": "Remote Proctored Online (from home)",
+      "allowed_devices": ["Desktop", "Laptop"],
+      "not_allowed": "Mobile Phone",
+      "proctoring": "AI + Human Proctors",
+      "mock_test": true,
+      "negative_marking": false,
+      "system_requirements": {
+        "browser": ["Google Chrome", "Mozilla Firefox"],
+        "internet": "Minimum 2 Mbps",
+        "hardware": ["Webcam", "Microphone (optional)", "Headphones recommended"]
+      },
+      "slots": "2 slots per day (bookable 2 days before exam)"
+    },
+    "postgraduate": {
+      "phases": 3,
+      "exam_dates": {
+        "phase1": "15.03.2025",
+        "phase2": "17.05.2025",
+        "phase3": "05.07.2025"
+      },
+      "application_deadlines": {
+        "phase1": "10.03.2025",
+        "phase2": "12.05.2025",
+        "phase3": "30.06.2025"
+      },
+      "cost_per_phase": 1400,
+      "mode": "Remote Proctored Online",
+      "slots": "1 slot per day",
+      "mock_test": true,
+      "negative_marking": false,
+      "system_requirements": {
+        "browser": ["Google Chrome", "Mozilla Firefox"],
+        "internet": "Minimum 2 Mbps",
+        "hardware": ["Webcam", "Microphone", "Headphones"]
       }
     },
-    "mtech": {
-      "computer_science": {
-        "ktc_campus": {
-          "fee": "₹1,60,000 per year",
-          "intake": 25
-        }
-      }
+    "faq_links": {
+      "syllabus": "https://webstor.srmist.edu.in/web_assets/downloads/2025/srmjeee-syllabus.pdf",
+      "exam_pattern": "https://webstor.srmist.edu.in/web_assets/downloads/2025/srmjeee-examinationpattern.pdf",
+      "eligibility": "https://www.srmist.edu.in/admission-india/engineering/"
     }
   },
-  
-  "hostel": {
-    "eligibility": "Full-time undergraduate, postgraduate, and research students from Engineering, Medicine, Science, Management, Law, and Diploma students",
-    "facilities": "Wi-Fi, laundry facilities, common rooms, 24/7 security, gymnasium, playgrounds, indoor games, medical support, and meal options",
-    "fees": "Range from ₹1.5 lakhs to ₹3.5 lakhs per year depending on campus and room type",
-    "contacts": {
-      "email": "hostel.helpdesk.ktr@srmist.edu.in",
-      "phone": "044-27453159"
-    }
-  },
-  
+
   "documents_required": [
     "Photograph (200x230 px)",
     "Signature (140x60 px)",
     "10th & 12th Mark Sheets",
     "Graduation Marks (if applicable)",
     "Transfer Certificate",
-    "Entrance Exam Scorecard"
-  ]
+    "Migration Certificate (if applicable)",
+    "Caste Certificate (if applicable)",
+    "Entrance Exam Scorecard (SRMJEEE, NEET, CAT, etc.)"
+  ],
+
+  "hostel": {
+    "booking_url": "https://sp.srmist.edu.in",
+    "vision": [
+      "To make students feel at home",
+      "To provide a friendly, comfortable, well-furnished, and secure ambiance",
+      "To foster a healthy, competitive, and culturally diverse learning environment",
+      "To inculcate discipline and strategic thinking"
+    ],
+    "eligibility": {
+      "eligible": [
+        "Full-time undergraduate, postgraduate, and research students",
+        "Students from Engineering, Medicine, Science, Management, Law",
+        "Diploma students (Polytechnic & Hotel Management)"
+      ],
+      "not_eligible": [
+        "Failed students not re-admitted",
+        "Part-time, evening, correspondence, or external course students",
+        "Students penalized for indiscipline",
+        "Working professionals or ex-students"
+      ]
+    },
+    "facilities": [
+      "Healthy, sumptuous food at subsidized rates",
+      "North Indian, South Indian, Thai, Chinese, and Continental options",
+      "Co-located dining halls",
+      "Gymnasium, playgrounds, indoor gaming (carrom, chess, table tennis)",
+      "24/7 security with CCTV surveillance",
+      "Wi-Fi and high-speed internet",
+      "Laundry services",
+      "Medical support and ambulance service"
+    ],
+    "contact": {
+      "general": {
+        "email": "hostel.helpdesk.ktr@srmist.edu.in",
+        "office": "044-27453159, 044-27456363, 044-27434506, 044-27456364",
+        "mobile": "8056016602",
+        "accounts": "044-27434503"
+      },
+      "director": {
+        "name": "Dr. E. Poovammal",
+        "role": "Directorate of Hostels, SRMIST-KTR Campus",
+        "email": "director.hostels@srmist.edu.in",
+        "phone": "+91 9940036021"
+      }
+    },
+    "campuses": {
+      "KTR": {
+        "name": "Kattankulathur Campus (Main)",
+        "location": "Chennai, Tamil Nadu",
+        "types": {
+          "men": "Sannasi A & C, Manoranjitham, Malligai, Mullai, Tamarai, Paari, Kaari, Oori, Adiyaman, Nelson Mandela, Began, Green Pearl, NRI, Pierre Fauchard",
+          "women": "ESQ A & B, Shenbagam, Kalpana Chawla, Meenakshi",
+          "international": "Dedicated International Hostel"
+        },
+        "facilities": [
+          "One of the greenest campuses in India",
+          "Separate dining for men and women",
+          "High-speed Wi-Fi (50 Mbps+)",
+          "AC and non-AC rooms",
+          "24/7 medical ambulance"
+        ]
+      },
+      "RMP": {
+        "name": "Ramapuram Campus",
+        "location": "Chennai, Tamil Nadu",
+        "types": {
+          "men": "Sree Ayyappan Hostel, Sree Venkateshwara Hostel",
+          "women": "Sree Ayyappan Women's Hostel, Sree Venkateshwara Women's Hostel",
+          "international": "Not available"
+        },
+        "facilities": [
+          "Separate hostels with mess",
+          "Study rooms and common areas",
+          "Wi-Fi and CCTV",
+          "Regular housekeeping"
+        ]
+      },
+      "VDP": {
+        "name": "Vadapalani Campus",
+        "location": "Chennai, Tamil Nadu",
+        "types": {
+          "men": "VDP Men's Hostel",
+          "women": "VDP Women's Hostel",
+          "international": "Not available"
+        },
+        "facilities": [
+          "City-based accommodation",
+          "Proximity to metro and transport",
+          "Basic Wi-Fi and security"
+        ]
+      },
+      "NCR": {
+        "name": "Delhi-NCR Campus",
+        "location": "Sonepat, Haryana",
+        "types": {
+          "men": "Boys Hostel A, B, C",
+          "women": "Girls Hostel A, B",
+          "international": "International Students Hostel"
+        },
+        "facilities": [
+          "Modern AC rooms",
+          "Centralized heating in winter",
+          "Sports complex and gym",
+          "High-speed internet"
+        ]
+      },
+      "AMR": {
+        "name": "Amrapali Campus",
+        "location": "Himalayan Region, Uttarakhand",
+        "types": {
+          "men": "Himalayan Men's Hostel",
+          "women": "Himalayan Women's Hostel",
+          "international": "International Hostel"
+        },
+        "facilities": [
+          "Scenic mountain views",
+          "Heated rooms",
+          "Indoor games and yoga hall",
+          "Organic food and nutrition"
+        ]
+      },
+      "Trichy": {
+        "name": "Tiruchirappalli Campus",
+        "location": "Tamil Nadu",
+        "types": {
+          "men": "Trichy Men's Hostel",
+          "women": "Trichy Women's Hostel",
+          "international": "Not available"
+        },
+        "facilities": [
+          "Affordable accommodation",
+          "Good ventilation and natural light",
+          "Study tables and lockers"
+        ]
+      },
+      "HYN": {
+        "name": "Haryana Campus",
+        "location": "Near Delhi-NCR",
+        "types": {
+          "men": "HYN Men's Hostel",
+          "women": "HYN Women's Hostel",
+          "international": "Available for international students"
+        },
+        "facilities": [
+          "Modern infrastructure",
+          "AC and non-AC rooms",
+          "24/7 power backup",
+          "Laundry and mess services"
+        ]
+      }
+    }
+  }
 }
