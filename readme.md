@@ -5,7 +5,7 @@ This project is an AI-powered chatbot designed to assist with college admission 
 ### Live Demo
 
 You can view a live demonstration of the chatbot here:
-**[https://srm-admission-assistant.netlify.app/](https://srm-admission-assistant.netlify.app/)**
+**[https://srm-admission-assistant.onrender.com](https://srm-admission-assistant.onrender.com)**
 
 ***
 
